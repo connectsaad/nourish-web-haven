@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook, Tiktok, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, Instagram, Facebook, TikTok, Youtube } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {

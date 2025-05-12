@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Tiktok, Youtube, Mail, Send } from 'lucide-react';
+import { Instagram, Facebook, TikTok, Youtube, Mail, Send } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,7 +20,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-peach">
-                <Tiktok size={20} />
+                <TikTok size={20} />
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-peach">
                 <Youtube size={20} />
