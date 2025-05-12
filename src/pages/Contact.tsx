@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Instagram, Facebook, TikTok, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -138,7 +137,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="bg-brand-light hover:bg-brand-green hover:text-white p-3 rounded-full transition-colors"
                 >
-                  <Tiktok size={20} />
+                  <Twitter size={20} />
                 </a>
                 <a 
                   href="https://youtube.com" 
