@@ -53,13 +53,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
-        // Custom brand colors
+        // Custom brand colors - updated with futuristic palette
         brand: {
-          green: "#4CAF50",
+          green: "#33C3F0", // Bright blue instead of green
           beige: "#F5F5DC",
-          peach: "#FFDAB9",
-          light: "#F9F9F7",
-          dark: "#2C3E50"
+          peach: "#9B87F5", // Vivid purple instead of peach
+          light: "#F0F8FF", // Light blue tint
+          dark: "#1A1F2C" // Dark blue-purple
         }
       },
       borderRadius: {
@@ -87,12 +87,26 @@ export default {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" }
+        },
+        // New futuristic animations
+        glow: {
+          "0%": { boxShadow: "0 0 5px rgba(51, 195, 240, 0.5)" },
+          "50%": { boxShadow: "0 0 20px rgba(51, 195, 240, 0.8)" },
+          "100%": { boxShadow: "0 0 5px rgba(51, 195, 240, 0.5)" }
+        },
+        pulse: {
+          "0%": { opacity: "0.6" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0.6" }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        fadeIn: "fadeIn 0.5s ease-out forwards"
+        fadeIn: "fadeIn 0.5s ease-out forwards",
+        // New futuristic animations
+        glow: "glow 2s ease-in-out infinite",
+        pulse: "pulse 3s ease-in-out infinite"
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
